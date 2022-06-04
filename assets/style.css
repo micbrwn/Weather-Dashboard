@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+    width: 100%;
+    /* background: #EFEFBB;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #D4D3DD, #EFEFBB);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #D4D3DD, #EFEFBB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 10%, #c0fdfa 100%); */
+    
+
+}
+
+
+header nav {
+    /* border: solid black 1px;
+    height: 100px; */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* text-align: center; */
+background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar-text {
+  /* justify-content: center; */
+    color: aliceblue;
+}
+
+.row {
+  width: 100%;
+}
+
+.weather-container {
+  text-align: left;
+}
+
+#current {
+  border: solid 1px black;
+  margin: 20px;
+  height: 250px;
+  /* width: 600px; */
+}
+
+#current-heading {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span {
+  margin: 20px 10px;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+input {
+  /* margin: 10px; */
+}
+
+.btn {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.weather-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}

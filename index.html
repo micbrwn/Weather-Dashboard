@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
+
+<header>
+  <!-- <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Weather Dashboard</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+          </div> -->
+  <nav class="navbar text-light bg-light">
+    <span class="navbar-text mb-0 h1 text-center">Weather Dashboard</span>
+  </nav>
+</header>
+
 <body>
-    
+  <div class="row">
+    <section class="form-outline col-sm-12 col-md-3">
+      <span>Search for a city:</span>
+      <!-- <textarea id="text-area" placeholder="San Diego"></textarea> -->
+      <!-- <label class="form-label" for="form1"></label> -->
+      <!-- <div class="form-outline"> -->
+        <input type="search" id="form1" class="form-control" placeholder="San Diego" aria-label="Search" />
+      <!-- </div> -->
+      <!-- <button class="btn" type="submit" name="action" id="searchBtn"></button> -->
+      <button type="button" class="btn btn-primary btn-block" id="searchBtn">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+      <!-- <button class="btn" type="reset" name="action" id="deleteBtn"></button> -->
+      <!-- <button type="button" class="btn btn-primary" id="deleteBtn"><i class="fa-solid fa-trash"></i></button> -->
+      <div id="city-list"></div>
+    </section>
+    <!-- <div class="input-group col-sm-12 col-md-3">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+      </button>
+    </div> -->
+
+    <secetion class="col-sm-12 col-md-9 weather-container">
+      <article class="weather" id="current">
+        <h3 id="current-heading">Current Weather</h3>
+        <p id="weather-head"></p>
+      </article>
+      <section id="weather-container"></section>
+      <article class="weather" id="forecast">
+        <h4 id="forecast-heading title">5 Day Forecast:</h4>
+        <p></p>
+        <!-- <section id="fore-container"></section> -->
+      </article>
+    </secetion>
+  </div>
 
 
-    <script src="./assets/script.js"></script>
+
+  <div class="row">
+
+  </div>
+
+  <script src="https://kit.fontawesome.com/de01171047.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
