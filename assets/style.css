@@ -3,7 +3,6 @@ body {
     width: 100%; 
 }
 
-
 header nav {
 background: #00416A;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -88,7 +87,6 @@ input {
 }
 
 .card-text1 {
-
   font-weight: bolder;
 }
 

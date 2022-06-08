@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   function getGeoLocation(searchInput) {
     var apiKey = '312bdb80adf7dd8b05eda8e9064d9b1a';
-    var url = 'http://api.openweathermap.org/geo/1.0/direct?q=' + searchInput + '&limit=&appid=' + apiKey;
+    var url = 'https://api.openweathermap.org/geo/1.0/direct?q=' + searchInput + '&limit=&appid=' + apiKey;
 
     fetch(url)
       .then(function (response) {
@@ -70,7 +70,7 @@ $(document).ready(function () {
         date1.innerHTML = new Date(dt1 * 1000).toDateString();
 
         var icon1 = document.createElement('img');
-        icon1.setAttribute('src', "http://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + ".png");   // Doesn't work 
+        icon1.setAttribute('src', "https://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + ".png");   // Doesn't work 
 
         var temp1 = document.createElement('p');
         temp1.innerHTML = "Temp (F): " + Math.floor(data.daily[0].temp.day)
@@ -115,7 +115,7 @@ $(document).ready(function () {
           date.innerHTML = new Date(dt * 1000).toDateString();
 
           var icon = document.createElement('img');
-          icon.setAttribute('src', "http://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + ".png");
+          icon.setAttribute('src', "https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + ".png");
 
           var temp = document.createElement('p');
           temp.innerHTML = "Temp (F): " + Math.floor(data.daily[i].temp.day)
@@ -171,13 +171,10 @@ $(document).ready(function () {
       cityList.textContent = "";
     })
 
-
     searchHistory.push(searchInput);
     localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
     historyList();
   });
-
-
 
 });
 
